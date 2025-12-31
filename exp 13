@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Inline and Internal CSS</title>
+<style>
+  h1 {
+    color: blue;
+    text-align: center;
+  }
+  p {
+    font-size: 18px;
+    color: green;
+  }
+</style>
+</head>
+<body>
+
+<h1 style="font-family: Arial, sans-serif;">Heading with Internal + Inline CSS</h1>
+<p style="color: red;">This paragraph has both internal and inline CSS applied.</p>
+<div style="background-color: yellow; padding: 10px;">This is a highlighted box.</div>
+
+</body>
+</html>
