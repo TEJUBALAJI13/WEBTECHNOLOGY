@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Background Repeat Example</title>
+<style>
+  body {
+    background-image: url('https://via.placeholder.com/100');
+    background-repeat: repeat; /* repeat-x, repeat-y, no-repeat also possible */
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding-top: 100px;
+  }
+</style>
+</head>
+<body>
+
+<h1>Background Repeat Example</h1>
+<p>The image repeats across the background.</p>
+
+</body>
+</html>
