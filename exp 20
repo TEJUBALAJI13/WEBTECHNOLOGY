@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Emoji Example</title>
+<style>
+  .emoji {
+    font-size: 50px; /* fixed size */
+    position: relative; /* can use absolute, relative, fixed, sticky */
+    margin: 20px;
+  }
+  .container {
+    position: relative;
+    height: 100px;
+  }
+  .emoji.absolute {
+    position: absolute;
+    top: 10px;
+    left: 50px;
+  }
+</style>
+</head>
+<body>
+
+<h2 style="text-align:center;">Emojis Example</h2>
+
+<div class="container">
+  <span class="emoji">😀</span>
+  <span class="emoji absolute">🎉</span>
+  <span class="emoji">🚀</span>
+</div>
+
+</body>
+</html>
