@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Picture Slider</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 50px;
+  }
+  .slider {
+    width: 500px;
+    height: 300px;
+    overflow: hidden;
+    margin: auto;
+    position: relative;
+    border: 2px solid #333;
+    border-radius: 10px;
+  }
+  .slides {
+    display: flex;
+    width: 2000px; /* 4 images x 500px */
+    transition: transform 0.5s ease-in-out;
+  }
+  .slides img {
+    width: 500px;
+    height: 300px;
+  }
+  .navigation-manual {
+    margin-top: 10px;
+  }
+  .navigation-manual input[type="radio"] {
+    cursor: pointer;
+    margin: 5px;
+  }
+</style>
+</head>
+<body>
+
+<h2>Picture Slider with Radio Buttons</h2>
+
+<div class="slider">
+  <div class="slides" id="slides">
+    <img src="https://via.placeholder.com/500x300?text=Image1" alt="Image1">
+    <img src="https://via.placeholder.com/500x300?text=Image2" alt="Image2">
+    <img src="https://via.placeholder.com/500x300?text=Image3" alt="Image3">
+    <img src="https://via.placeholder.com/500x300?text=Image4" alt="Image4">
+  </div>
+</div>
+
+<div class="navigation-manual">
+  <input type="radio" name="radio-btn" onclick="showSlide(0)" checked>
+  <input type="radio" name="radio-btn" onclick="showSlide(1)">
+  <input type="radio" name="radio-btn" onclick="showSlide(2)">
+  <input type="radio" name="radio-btn" onclick="showSlide(3)">
+</div>
+
+<script>
+let currentSlide = 0;
+const slides = document.getElementById('slides');
+
+function showSlide(index) {
+  currentSlide = index;
+  slides.style.transform = `translateX(${-500 * index}px)`;
+}
+
+// Auto slide every 3 seconds
+setInterval(() => {
+  currentSlide = (currentSlide + 1) % 4;
+  slides.style.transform = `translateX(${-500 * currentSlide}px)`;
+  document.getElementsByName('radio-btn')[currentSlide].checked = true;
+}, 3000);
+</script>
+
+</body>
+</html>
