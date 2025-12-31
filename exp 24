@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Date and Time</title>
+</head>
+<body>
+
+<h2 style="text-align:center;">Current Date & Time</h2>
+<p id="datetime" style="font-size:20px; text-align:center;"></p>
+
+<script>
+function showDateTime() {
+  const now = new Date();
+  document.getElementById('datetime').innerText = now.toLocaleString();
+}
+setInterval(showDateTime, 1000);
+showDateTime();
+</script>
+
+</body>
+</html>
