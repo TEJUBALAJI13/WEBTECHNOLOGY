@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Job Portal</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #e0f7fa;
+    padding: 20px;
+  }
+  header, footer {
+    background-color: #00796b;
+    color: white;
+    text-align: center;
+    padding: 15px;
+  }
+  main {
+    margin: 20px auto;
+    width: 80%;
+  }
+  input, select, button {
+    padding: 8px;
+    margin: 5px;
+  }
+  .job-list {
+    margin-top: 20px;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  .job-list th, .job-list td {
+    border: 1px solid #333;
+    padding: 10px;
+    text-align: center;
+  }
+  .job-list th {
+    background-color: #004d40;
+    color: white;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Job Portal</h1>
+</header>
+
+<main>
+  <h2>Search Jobs</h2>
+  <input type="text" placeholder="Job Title">
+  <select>
+    <option>Location</option>
+    <option>City A</option>
+    <option>City B</option>
+  </select>
+  <button>Search</button>
+
+  <table class="job-list">
+    <tr>
+      <th>Company</th>
+      <th>Position</th>
+      <th>Location</th>
+      <th>Salary</th>
+    </tr>
+    <tr>
+      <td>ABC Corp</td>
+      <td>Software Developer</td>
+      <td>City A</td>
+      <td>50,000</td>
+    </tr>
+    <tr>
+      <td>XYZ Ltd</td>
+      <td>Data Analyst</td>
+      <td>City B</td>
+      <td>45,000</td>
+    </tr>
+  </table>
+</main>
+
+<footer>
+  &copy; 2025 Job Portal
+</footer>
+
+</body>
+</html>
