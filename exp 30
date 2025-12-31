@@ -1,0 +1,39 @@
+<!-- employeeForm.jsp -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Employee Registration</title>
+</head>
+<body>
+    <h2>Employee Registration Form</h2>
+    <form action="displayEmployee.jsp" method="post">
+        Name: <input type="text" name="name" required><br><br>
+        Age: <input type="number" name="age" required><br><br>
+        Department: <input type="text" name="dept" required><br><br>
+        Salary: <input type="number" name="salary" required><br><br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
+
+<!-- displayEmployee.jsp -->
+<%@ page import="java.io.*" %>
+<%
+    String name = request.getParameter("name");
+    String age = request.getParameter("age");
+    String dept = request.getParameter("dept");
+    String salary = request.getParameter("salary");
+%>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Employee Details</title>
+</head>
+<body>
+    <h2>Employee Details Submitted</h2>
+    <p><b>Name:</b> <%= name %></p>
+    <p><b>Age:</b> <%= age %></p>
+    <p><b>Department:</b> <%= dept %></p>
+    <p><b>Salary:</b> <%= salary %></p>
+</body>
+</html>
