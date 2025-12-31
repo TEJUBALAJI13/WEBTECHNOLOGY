@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Frameset Example</title>
+</head>
+<frameset cols="30%,70%">
+  <frame src="frame1.html" name="leftFrame">
+  <frame src="frame2.html" name="rightFrame">
+</frameset>
+</html>
