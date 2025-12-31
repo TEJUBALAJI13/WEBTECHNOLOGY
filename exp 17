@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Mark List</title>
+<style>
+  table {
+    width: 60%;
+    border-collapse: collapse;
+    margin: 50px auto;
+  }
+  th, td {
+    border: 1px solid #333;
+    padding: 10px;
+    text-align: center;
+  }
+  th {
+    background-color: #4CAF50;
+    color: white;
+  }
+</style>
+</head>
+<body>
+
+<h2 style="text-align:center;">Class Test Mark List</h2>
+<table>
+  <tr>
+    <th>Student Name</th>
+    <th>Math</th>
+    <th>Science</th>
+    <th>English</th>
+    <th>Total</th>
+  </tr>
+  <tr>
+    <td>John</td>
+    <td>85</td>
+    <td>90</td>
+    <td>80</td>
+    <td>255</td>
+  </tr>
+  <tr>
+    <td>Mary</td>
+    <td>78</td>
+    <td>88</td>
+    <td>92</td>
+    <td>258</td>
+  </tr>
+  <tr>
+    <td>Alex</td>
+    <td>90</td>
+    <td>85</td>
+    <td>88</td>
+    <td>263</td>
+  </tr>
+</table>
+
+</body>
+</html>
